@@ -1189,6 +1189,9 @@ JAVASCRIPT;
         $dataScript = '';
 
         foreach ($data as $key => $value) {
+        	if (empty($value['value'])) {
+        		$value['value'] = 0;
+	        }
             $issuesHtml .= '<div class="clearfix">
                    <div class="block-cell">'.$value['label'].'</div>
                    <div class="block-cell text-center">'.$value['value'].'</div>
