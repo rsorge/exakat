@@ -460,153 +460,153 @@ JAVASCRIPT;
       };
 
       // Apply the theme
-      Highcharts.setOptions(Highcharts.theme);
-
-      $('#filename').highcharts({
-          credits: {
-            enabled: false
-          },
-
-          exporting: {
-            enabled: false
-          },
-
-          chart: {
-              type: 'column'
-          },
-          title: {
-              text: ''
-          },
-          xAxis: {
-              categories: [SCRIPTDATAFILES]
-          },
-          yAxis: {
-              min: 0,
-              title: {
-                  text: ''
-              },
-              stackLabels: {
-                  enabled: false,
-                  style: {
-                      fontWeight: 'bold',
-                      color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                  }
-              }
-          },
-          legend: {
-              align: 'right',
-              x: 0,
-              verticalAlign: 'top',
-              y: -10,
-              floating: false,
-              backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-              borderColor: '#CCC',
-              borderWidth: 1,
-              shadow: false
-          },
-          tooltip: {
-              headerFormat: '<b>{point.x}</b><br/>',
-              pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-          },
-          plotOptions: {
-              column: {
-                  stacking: 'normal',
-                  dataLabels: {
-                      enabled: false,
-                      color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                      style: {
-                          textShadow: '0 0 3px black'
-                      }
-                  }
-              }
-          },
-          series: [{
-              name: 'Critical',
-              data: [SCRIPTDATACRITICAL]
-          }, {
-              name: 'Major',
-              data: [SCRIPTDATAMAJOR]
-          }, {
-              name: 'Minor',
-              data: [SCRIPTDATAMINOR]
-          }, {
-              name: 'None',
-              data: [SCRIPTDATANONE]
-          }]
-      });
-
-      $('#container').highcharts({
-          credits: {
-            enabled: false
-          },
-
-          exporting: {
-            enabled: false
-          },
-
-          chart: {
-              type: 'column'
-          },
-          title: {
-              text: ''
-          },
-          xAxis: {
-              categories: [SCRIPTDATAANALYZERLIST]
-          },
-          yAxis: {
-              min: 0,
-              title: {
-                  text: ''
-              },
-              stackLabels: {
-                  enabled: false,
-                  style: {
-                      fontWeight: 'bold',
-                      color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                  }
-              }
-          },
-          legend: {
-              align: 'right',
-              x: 0,
-              verticalAlign: 'top',
-              y: -10,
-              floating: false,
-              backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-              borderColor: '#CCC',
-              borderWidth: 1,
-              shadow: false
-          },
-          tooltip: {
-              headerFormat: '<b>{point.x}</b><br/>',
-              pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-          },
-          plotOptions: {
-              column: {
-                  stacking: 'normal',
-                  dataLabels: {
-                      enabled: false,
-                      color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                      style: {
-                          textShadow: '0 0 3px black'
-                      }
-                  }
-              }
-          },
-          series: [{
-              name: 'Critical',
-              data: [SCRIPTDATAANALYZERCRITICAL]
-          }, {
-              name: 'Major',
-              data: [SCRIPTDATAANALYZERMAJOR]
-          }, {
-              name: 'Minor',
-              data: [SCRIPTDATAANALYZERMINOR]
-          }, {
-              name: 'None',
-              data: [SCRIPTDATAANALYZERNONE]
-          }]
-      });
+//      Highcharts.setOptions(Highcharts.theme);
+//
+//      $('#filename').highcharts({
+//          credits: {
+//            enabled: false
+//          },
+//
+//          exporting: {
+//            enabled: false
+//          },
+//
+//          chart: {
+//              type: 'column'
+//          },
+//          title: {
+//              text: ''
+//          },
+//          xAxis: {
+//              categories: [SCRIPTDATAFILES]
+//          },
+//          yAxis: {
+//              min: 0,
+//              title: {
+//                  text: ''
+//              },
+//              stackLabels: {
+//                  enabled: false,
+//                  style: {
+//                      fontWeight: 'bold',
+//                      color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+//                  }
+//              }
+//          },
+//          legend: {
+//              align: 'right',
+//              x: 0,
+//              verticalAlign: 'top',
+//              y: -10,
+//              floating: false,
+//              backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+//              borderColor: '#CCC',
+//              borderWidth: 1,
+//              shadow: false
+//          },
+//          tooltip: {
+//              headerFormat: '<b>{point.x}</b><br/>',
+//              pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+//          },
+//          plotOptions: {
+//              column: {
+//                  stacking: 'normal',
+//                  dataLabels: {
+//                      enabled: false,
+//                      color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+//                      style: {
+//                          textShadow: '0 0 3px black'
+//                      }
+//                  }
+//              }
+//          },
+//          series: [{
+//              name: 'Critical',
+//              data: [SCRIPTDATACRITICAL]
+//          }, {
+//              name: 'Major',
+//              data: [SCRIPTDATAMAJOR]
+//          }, {
+//              name: 'Minor',
+//              data: [SCRIPTDATAMINOR]
+//          }, {
+//              name: 'None',
+//              data: [SCRIPTDATANONE]
+//          }]
+//      });
+//
+//      $('#container').highcharts({
+//          credits: {
+//            enabled: false
+//          },
+//
+//          exporting: {
+//            enabled: false
+//          },
+//
+//          chart: {
+//              type: 'column'
+//          },
+//          title: {
+//              text: ''
+//          },
+//          xAxis: {
+//              categories: [SCRIPTDATAANALYZERLIST]
+//          },
+//          yAxis: {
+//              min: 0,
+//              title: {
+//                  text: ''
+//              },
+//              stackLabels: {
+//                  enabled: false,
+//                  style: {
+//                      fontWeight: 'bold',
+//                      color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+//                  }
+//              }
+//          },
+//          legend: {
+//              align: 'right',
+//              x: 0,
+//              verticalAlign: 'top',
+//              y: -10,
+//              floating: false,
+//              backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+//              borderColor: '#CCC',
+//              borderWidth: 1,
+//              shadow: false
+//          },
+//          tooltip: {
+//              headerFormat: '<b>{point.x}</b><br/>',
+//              pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+//          },
+//          plotOptions: {
+//              column: {
+//                  stacking: 'normal',
+//                  dataLabels: {
+//                      enabled: false,
+//                      color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+//                      style: {
+//                          textShadow: '0 0 3px black'
+//                      }
+//                  }
+//              }
+//          },
+//          series: [{
+//              name: 'Critical',
+//              data: [SCRIPTDATAANALYZERCRITICAL]
+//          }, {
+//              name: 'Major',
+//              data: [SCRIPTDATAANALYZERMAJOR]
+//          }, {
+//              name: 'Minor',
+//              data: [SCRIPTDATAANALYZERMINOR]
+//          }, {
+//              name: 'None',
+//              data: [SCRIPTDATAANALYZERNONE]
+//          }]
+//      });
     });
   </script>
 
