@@ -1275,7 +1275,7 @@ SQL;
 
         foreach ($analysers as $analyser) {
             $analyserHTML.= "<tr>";
-            $analyserHTML.='<td>'.$analyser['label'].'</td>
+            $analyserHTML.='<td><a href="issues.html#analyzer='.$analyser['analyzer'].'">'.$analyser['label'].'</a></td>
                         <td>'.$analyser['recipes'].'</td>
                         <td>'.$analyser['issues'].'</td>
                         <td>'.$analyser['files'].'</td>
@@ -1334,7 +1334,7 @@ SQL;
 
         foreach ($files as $file) {
             $filesHTML.= "<tr>";
-            $filesHTML.='<td>'.$file['file'].'</td>
+            $filesHTML.='<td><a href="issues.html#file='.$file['file'].'">'.$file['file'].'</a></td>
                         <td>'.$file['loc'].'</td>
                         <td>'.$file['issues'].'</td>
                         <td>'.$file['analyzers'].'</td>';
@@ -1673,7 +1673,8 @@ SQL;
             $item['line' ] =  $row['line'];
             $item['severity'] = "<i class=\"fa fa-warning\" style=\"color: ".$severityColors[$this->severities[$row['analyzer']]]."\"></i>";
             $item['complexity'] = "<i class=\"fa fa-cog\" style=\"color: ".$TTFColors[$this->timesToFix[$row['analyzer']]]."\"></i>";
-            $item['recipe' ] =  implode(', ', $this->themesForAnalyzer[$row['analyzer']]);
+            $item['receipt'] =  $this->themesForAnalyzer[$row['analyzer']];
+            $item['recipe'] =  implode(', ', $item['receipt']);
             $lines = explode("\n", $ini['description']);
             $item['analyzer_help' ] = $lines[0];
 
